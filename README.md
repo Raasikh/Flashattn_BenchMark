@@ -73,5 +73,3 @@ Exact numbers depend on GPU, batch size, and sequence length. The benchmark swee
 ## How to Talk About This
 
 **Problem → Analysis → Action → Result:**
-
-> "Our baseline LLM inference P95 was too high. I profiled and found attention blocks and kernel launch overhead dominating. I replaced standard attention with FlashAttention via SDPA and fused the QKV projections, applied weight-only INT8 with per-channel scales, and captured the forward pass as a CUDA graph for replay. Measured with CUDA events under realistic load — P95 dropped by X% without meaningful quality degradation."
