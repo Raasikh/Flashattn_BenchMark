@@ -5,7 +5,6 @@
 A hands-on benchmark comparing LLM inference optimization techniques:
 - **Standard Attention** → **FlashAttention + Fused QKV** → **+ CUDA Graphs** → **+ INT8 Quantization**
 
-This demonstrates the techniques behind: *"LLM inference latency reduction of 44% using optimized attention kernels, quantized tensors, and GPU graph fusion."*
 
 ## Quick Start
 
